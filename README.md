@@ -52,4 +52,4 @@ Ensure the following requirements are met before running the project:
 Clone this project from GitHub to your local system:
 ```bash
 git clone https://github.com/y4shred16/Impact-of-AI-on-ESG.git
-cd bloomberg-esg-data-retrieval
+cd Impact-of-AI-on-ESG
