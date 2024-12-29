@@ -1,0 +1,21 @@
+import os
+import shutil
+
+# Define the source directory and the target directory
+source_dir = '.'
+target_dir = './scripts'
+
+# Create the target directory if it doesn't exist
+if not os.path.exists(target_dir):
+    os.makedirs(target_dir)
+
+# Loop through all files in the source directory
+for file_name in os.listdir(source_dir):
+    # Check if the file is a .py file
+    if file_name.endswith('.py'):
+        # Construct full file path
+        source_file = os.path.join(source_dir, file_name)
+        target_file = os.path.join(target_dir, file_name)
+        # Move the file
+        shutil.move(source_file, target_file)
+        print(f'Moved: {file_name} to {target_dir}')
